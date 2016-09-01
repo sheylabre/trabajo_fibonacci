@@ -163,11 +163,7 @@ trigger06.addEventListener('click', function () {
 
 // ----------------------------------------------------------------------
 // Ejercicio 07
-//
-// Sucesion de Fibonnaci:
-//  0, 1, 1, 2, 3, 5, 8, 13, ...
-//  a_n = a_(n-1) + a_(n-2)
-//
+
 function graphLine(x) {
     line = "";
 
@@ -175,15 +171,15 @@ function graphLine(x) {
         line = line.concat("*");
     }
 
-    line = line.concat("<br/>");
     return line;
 }
 
 function ejercicio07(x) {
     var y = "";
 
-    for(var i = 0; i <= x; i++) {
+    for(var i = 1; i <= x; i++) {
         y = y.concat(graphLine(i));
+        y = y.concat("<br/>");
     }
 
     return y;
@@ -196,6 +192,104 @@ var trigger07 = document.querySelector('#ejercicio07 .trigger'),
 trigger07.addEventListener('click', function () {
     var x = parseInt(input07.value);
     var y = ejercicio07(x);
-    output07.html = y;
+    output07.innerHTML = y;
 })
 
+// ----------------------------------------------------------------------
+// Ejercicio 08
+function graphLine(x) {
+    line = "";
+
+    for(var i = 1; i <= x; i++){
+        line = line.concat("*");
+    }
+
+    return line;
+}
+
+function ejercicio08(x) {
+    var y = "";
+
+    for(var i = x; i >= 1; i--) {
+        y = y.concat(graphLine(i));
+        y = y.concat("<br/>");
+    }
+
+    return y;
+}
+
+var trigger08 = document.querySelector('#ejercicio08 .trigger'),
+    input08 = document.querySelector('#ejercicio08 .input input'),
+    output08 = document.querySelector('#ejercicio08 .output');
+
+trigger08.addEventListener('click', function () {
+    var x = parseInt(input08.value);
+    var y = ejercicio08(x);
+    output08.innerHTML = y;
+})
+
+// ----------------------------------------------------------------------
+// Ejercicio 09
+function graphLine(x) {
+    line = "";
+
+    for(var i = 1; i <= x; i++){
+        line = line.concat("*");
+    }
+
+    return line;
+}
+
+function ejercicio09(x) {
+    var y = "";
+
+    for(var i = x; i >= 1; i--) {
+        y = y.concat(graphLine(i));
+        y = y.concat("<br/>");
+    }
+
+    return y;
+}
+
+var trigger09 = document.querySelector('#ejercicio09 .trigger'),
+    input09 = document.querySelector('#ejercicio09 .input input'),
+    output09 = document.querySelector('#ejercicio09 .output');
+
+trigger09.addEventListener('click', function () {
+    var x = parseInt(input09.value);
+    var y = ejercicio09(x);
+    output09.innerHTML = y;
+})
+
+// ----------------------------------------------------------------------
+// Ejercicio 10
+function graphLine(x) {
+    line = "";
+
+    for(var i = 1; i <= x; i++){
+        line = line.concat("*");
+    }
+
+    return line;
+}
+
+function ejercicio10(x) {
+    var y = "";
+
+    for(var i = x; i >= 1; i--) {
+        y = y.concat(graphLine(i));
+        y = y.concat("<br/>");
+    }
+
+    return y;
+}
+
+var trigger10 = document.querySelector('#ejercicio10 .trigger'),
+    input10 = document.querySelector('#ejercicio10 .input input'),
+    output10 = document.querySelector('#ejercicio10 .output');
+
+trigger10.addEventListener('click', function () {
+    var x = parseInt(input10.value);
+    var y = ejercicio10(x);
+    output10.innerHTML = y;
+})
